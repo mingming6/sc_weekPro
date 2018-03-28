@@ -21,7 +21,6 @@ public class TestActivity extends AppCompatActivity implements IWXRenderListener
 
         mWXSDKInstance = new WXSDKInstance(this);
         mWXSDKInstance.registerRenderListener(this);
-
         mWXSDKInstance.render(WXFileUtils.loadAsset("index.js", this));
     }
 
